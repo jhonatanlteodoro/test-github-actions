@@ -1,6 +1,6 @@
 name: GitHub Actions Demo
 on:
-  pull_request:
+  push:
     paths:
       - 'app1/**'
 
@@ -20,3 +20,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "APP 1  -   APP 1 "
+      - run: ./app1/run.sh
