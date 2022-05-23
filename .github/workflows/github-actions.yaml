@@ -1,5 +1,9 @@
 name: GitHub Actions Demo
-on: [push]
+on:
+  pull_request:
+    paths:
+      - 'app1/**'
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -15,3 +19,4 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "APP 1  -   APP 1 "
