@@ -20,4 +20,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "APP 1  -   APP 1 "
-      - run: ./app1/run.sh
+      - run: chmod +x ./app1/run.sh && ./app1/run.sh
