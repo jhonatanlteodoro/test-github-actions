@@ -1,3 +1,3 @@
 #! /bin/bash -
 
-echo "Hello Github Actions FROM APP 1"
+echo "Hello  FROM APP 1"
